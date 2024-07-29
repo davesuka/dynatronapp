@@ -1,0 +1,79 @@
+.customer-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.add-customer-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+}
+
+.add-customer-button:hover {
+  background-color: #45a049;
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.customer-table th, .customer-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.customer-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.customer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.customer-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.customer-table tr.selected {
+  background-color: #d1e7dd;
+}
+
+.customer-table button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+}
+
+.customer-table button:hover {
+  background-color: #45a049;
+}
+
+.customer-table button:focus {
+  outline: none;
+}

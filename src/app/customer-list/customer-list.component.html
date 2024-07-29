@@ -1,0 +1,26 @@
+<div class="customer-list-container">
+    <h2>Customer List</h2>
+    <button class="add-customer-button" (click)="addCustomer()">Add Customer</button>
+    <table class="customer-table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers" (click)="selectCustomer(customer)" [class.selected]="customer === selectedCustomer">
+          <td>{{ customer.firstName }}</td>
+          <td>{{ customer.lastName }}</td>
+          <td>{{ customer.email }}</td>          
+          <td>
+            <button (click)="editCustomer(customer)">Edit</button>
+            <button (click)="deleteCustomer(customer.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
